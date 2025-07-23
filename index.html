@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House-Tree-Person Psychological Test</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="stars" id="stars"></div>
+    
+    <div class="container">
+        <div class="header">
+            <h1 class="title">House-Tree-Person Test</h1>
+            <p class="subtitle">Discover your psychological landscape through intuitive drawing</p>
+        </div>
+
+        <div class="main-content">
+            <div class="canvas-section">
+                <div class="canvas-container">
+                    <canvas id="drawingCanvas" width="800" height="600"></canvas>
+                </div>
+                <div class="tools">
+                    <div class="tool-group">
+                        <label>Color:</label>
+                        <input type="color" id="colorPicker" class="color-picker" value="#000000">
+                    </div>
+                    <div class="tool-group">
+                        <label>Brush Size:</label>
+                        <input type="range" id="brushSize" class="brush-size" min="1" max="20" value="3">
+                        <span id="brushSizeValue">3px</span>
+                    </div>
+                    <div class="tool-group">
+                        <button class="btn" onclick="clearCanvas()">Clear</button>
+                        <button class="btn" onclick="undoLast()">Undo</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <div class="phase-indicator">
+                    <div class="phase-title" id="phaseTitle">Phase 1: Draw a House</div>
+                    <div class="phase-description" id="phaseDescription">
+                        Draw a house as you imagine it. Include details like windows, doors, and surroundings. Let your intuition guide you.
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill" style="width: 33%"></div>
+                    </div>
+                </div>
+
+                <div class="insights-panel">
+                    <h3 style="color: #ffd700; margin-bottom: 15px;">Live Insights</h3>
+                    <div class="insight-item">
+                        <div class="insight-label">Drawing Time:</div>
+                        <div id="drawingTime">0:00</div>
+                    </div>
+                    <div class="insight-item">
+                        <div class="insight-label">Strokes Made:</div>
+                        <div id="strokeCount">0</div>
+                    </div>
+                    <div class="insight-item">
+                        <div class="insight-label">Colors Used:</div>
+                        <div id="colorCount">1</div>
+                    </div>
+                    <div class="insight-item">
+                        <div class="insight-label">Canvas Coverage:</div>
+                        <div id="coverage">0%</div>
+                    </div>
+                </div>
+
+                <button class="next-phase-btn" onclick="nextPhase()">Continue to Tree</button>
+            </div>
+        </div>
+
+        <div class="analysis-panel hidden" id="analysisPanel">
+            <h2 class="analysis-title">Your Psychological Analysis</h2>
+            <div class="analysis-grid" id="analysisGrid">
+                <!-- Analysis results will be populated here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
