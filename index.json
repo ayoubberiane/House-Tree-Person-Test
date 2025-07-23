@@ -1,0 +1,229 @@
+{
+  "project": {
+    "name": "House-Tree-Person Psychological Test Interface",
+    "version": "2.0.0",
+    "description": "Advanced psychological assessment tool with multi-language backend analysis",
+    "author": "AI Development Team",
+    "created": "2025-07-23"
+  },
+  
+  "file_structure": {
+    "frontend": {
+      "index.html": {
+        "description": "Main HTML structure with semantic markup and accessibility features",
+        "dependencies": ["styles.css", "script.js"],
+        "features": [
+          "Responsive canvas drawing interface",
+          "Progressive phase guidance",
+          "Real-time metrics display",
+          "Glassmorphism design elements"
+        ]
+      },
+      "styles.css": {
+        "description": "Advanced CSS with modern design patterns",
+        "features": [
+          "CSS Grid and Flexbox layouts",
+          "Custom animations and transitions",
+          "Responsive design breakpoints",
+          "Glassmorphism and backdrop filters",
+          "CSS custom properties (variables)"
+        ],
+        "design_principles": [
+          "Mobile-first responsive design",
+          "Accessibility compliance (WCAG 2.1)",
+          "Modern color schemes with gradients",
+          "Smooth micro-interactions"
+        ]
+      },
+      "script.js": {
+        "description": "Interactive JavaScript with advanced drawing functionality",
+        "features": [
+          "HTML5 Canvas API drawing system",
+          "Touch and mouse event handling",
+          "Real-time psychological metrics",
+          "Phase progression management",
+          "Data collection and analysis triggers"
+        ],
+        "algorithms": [
+          "Drawing path optimization",
+          "Color diversity calculation",
+          "Stroke density analysis",
+          "Time-based behavioral tracking"
+        ]
+      }
+    },
+    
+    "backend_php": {
+      "analysis.php": {
+        "description": "PHP server-side psychological analysis engine",
+        "features": [
+          "RESTful API endpoints",
+          "Advanced psychological interpretation algorithms",
+          "Phase-specific analysis methods",
+          "Behavioral pattern recognition",
+          "Comprehensive report generation"
+        ],
+        "analysis_methods": [
+          "Drawing metrics calculation",
+          "Behavioral pattern analysis",
+          "Psychological interpretation frameworks",
+          "Personality trait assessment",
+          "Recommendation generation"
+        ]
+      }
+    },
+    
+    "backend_python": {
+      "htp_analyzer.py": {
+        "description": "Python machine learning analysis with Flask API",
+        "dependencies": [
+          "numpy", "pandas", "scikit-learn", 
+          "matplotlib", "seaborn", "flask", "scipy"
+        ],
+        "features": [
+          "Machine learning personality clustering",
+          "Statistical correlation analysis",
+          "Advanced feature extraction",
+          "Percentile ranking calculations",
+          "Comprehensive behavioral insights"
+        ],
+        "ml_algorithms": [
+          "K-means clustering for personality types",
+          "Feature engineering for psychological traits",
+          "Statistical analysis and correlations",
+          "Percentile ranking against normative data"
+        ]
+      }
+    },
+    
+    "configuration": {
+      "config.json": {
+        "description": "Project configuration and documentation file",
+        "purpose": "Central configuration management and project documentation"
+      }
+    }
+  },
+  
+  "psychological_framework": {
+    "test_phases": {
+      "house": {
+        "psychological_domain": "Home, security, family dynamics",
+        "analysis_factors": [
+          "Windows (social openness)",
+          "Doors (accessibility)", 
+          "Size (self-worth)",
+          "Details (attention to environment)",
+          "Surroundings (social context)"
+        ]
+      },
+      "tree": {
+        "psychological_domain": "Personal growth, life energy, stability",
+        "analysis_factors": [
+          "Roots (past/family connections)",
+          "Trunk (inner strength)",
+          "Branches (aspirations/future)",
+          "Leaves (current vitality)",
+          "Overall structure (life philosophy)"
+        ]
+      },
+      "person": {
+        "psychological_domain": "Self-image, body awareness, relationships",
+        "analysis_factors": [
+          "Facial features (self-perception)",
+          "Posture (confidence)",
+          "Clothing (social awareness)",
+          "Activity level (engagement)",
+          "Proportions (body image)"
+        ]
+      }
+    },
+    
+    "analysis_dimensions": {
+      "time_investment": "Psychological engagement and interest level",
+      "complexity_detail": "Attention to detail and thoroughness",
+      "color_usage": "Emotional expression and creativity",
+      "consistency": "Behavioral stability and reliability",
+      "progression": "Development and change patterns"
+    }
+  },
+  
+  "technical_specifications": {
+    "frontend_tech": {
+      "html5": ["Canvas API", "Semantic markup", "Accessibility features"],
+      "css3": ["Grid/Flexbox", "Custom properties", "Animations", "Responsive design"],
+      "javascript": ["ES6+ syntax", "Canvas manipulation", "Event handling", "Data analysis"]
+    },
+    
+    "backend_tech": {
+      "php": {
+        "version": "7.4+",
+        "features": ["Object-oriented design", "RESTful API", "JSON processing"]
+      },
+      "python": {
+        "version": "3.8+",
+        "frameworks": ["Flask", "NumPy", "Pandas", "Scikit-learn"],
+        "capabilities": ["Machine learning", "Statistical analysis", "Data visualization"]
+      }
+    }
+  },
+  
+  "deployment_instructions": {
+    "local_development": {
+      "frontend": "Open index.html in modern web browser",
+      "php_backend": "Run with Apache/Nginx server with PHP 7.4+",
+      "python_backend": "Install dependencies: pip install -r requirements.txt && python htp_analyzer.py"
+    },
+    
+    "production_deployment": {
+      "frontend": "Deploy to CDN or static hosting (Netlify, Vercel)",
+      "php_backend": "Deploy to shared hosting or VPS with PHP support",
+      "python_backend": "Deploy to cloud platforms (Heroku, AWS, Google Cloud)"
+    }
+  },
+  
+  "api_endpoints": {
+    "php_api": {
+      "base_url": "https://your-domain.com/",
+      "endpoints": {
+        "POST /analysis.php": "Main analysis endpoint for drawing data",
+        "GET /analysis.php": "API documentation page"
+      }
+    },
+    
+    "python_api": {
+      "base_url": "http://localhost:5000/",
+      "endpoints": {
+        "POST /analyze": "Advanced ML-based analysis",
+        "GET /health": "Service health check",
+        "GET /api/docs": "Comprehensive API documentation"
+      }
+    }
+  },
+  
+  "data_flow": {
+    "1_user_interaction": "User draws on HTML5 canvas with real-time feedback",
+    "2_data_collection": "JavaScript collects drawing metrics, timing, and behavioral data",
+    "3_phase_progression": "System guides through House → Tree → Person phases",
+    "4_analysis_trigger": "Completed data sent to backend analysis engines",
+    "5_processing": "PHP and/or Python backends process psychological indicators",
+    "6_results_display": "Comprehensive analysis presented to user"
+  },
+  
+  "security_considerations": {
+    "data_privacy": "No personal identification stored, drawing data processed anonymously",
+    "input_validation": "Server-side validation of all drawing data",
+    "cors_headers": "Proper CORS configuration for cross-origin requests",
+    "rate_limiting": "API rate limiting to prevent abuse"
+  },
+  
+  "future_enhancements": {
+    "planned_features": [
+      "User account system with progress tracking",
+      "Comparative analysis against demographic groups",
+      "Advanced AI interpretation using deep learning",
+      "Integration with other psychological assessments",
+      "Real-time collaborative drawing sessions",
+      "Multilingual support and cultural adaptations"
+    ]
+  }
+}
